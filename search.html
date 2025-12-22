@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Поиск товаров - ЭкоМаркет</title>
+    <link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/pages-styles.css">
+<script type="text/javascript" nonce="fc556a4489384d409f018b3d30c" src="//local.adguard.org?ts=1766416366779&amp;type=content-script&amp;dmn=ppl-ai-code-interpreter-files.s3.amazonaws.com&amp;url=https%3A%2F%2Fppl-ai-code-interpreter-files.s3.amazonaws.com%2Fweb%2Fdirect-files%2F21570510982a706edbcdb7a308fb4d52%2Fcda05c8e-db65-40af-b523-6d4b7e852130%2F8802dce0.html%3Fresponse-content-disposition%3Dattachment%253B%2520filename%253Dsearch.html%253B%2520filename%252A%253DUTF-8%2527%2527search.html%26AWSAccessKeyId%3DASIA2F3EMEYEQDNFXAKQ%26Signature%3DQQMq4%252FLXWyxxZ3UG47%252FUGUi7Kq0%253D%26x-amz-security-token%3DIQoJb3JpZ2luX2VjEC8aCXVzLWVhc3QtMSJHMEUCIQCPkMVaEA05MBsL7F0eo2W9HA7oO3PvUjJN4rLKMQda0gIgNNXKLTjgs8DmUenp0m8nipfFcfPzSejb%252BulTMEV%252B14Aq%252FAQI%252BP%252F%252F%252F%252F%252F%252F%252F%252F%252F%252FARABGgw2OTk3NTMzMDk3MDUiDCp3ueG4pTYLM0LJ5CrQBB9LEBtTKfKrNazSonEi%252F4wxnN0Gh0eoXWA06hMAWVIUWnPeOZ7PZGg7W4BBzVWbWuxArwDCUNcoxDxoOJ4rsR0%252FRCdAoJn2lEudfx0rsZuMtewk6rtnG2eo0o3i7LWMzUS548H2qLf48gZE98BOTbyPbvWLxtlrMcZpQac4OwgepQjdvBhrPTEr4YtFsi%252BNU91DcUfGCZozrj%252FoFM8DQlpi4NMTUyiqGosk7TFJgAdpeQEtv2uO4H1FwcCSpCNYwBm9fndUPGx1%252BgtEmKJUxL9Dh%252Fg7pmiNeoBQcypQyklMhzKMPXMFnsfo0o0JAZScUBfeWuPlSBsM24VXQzjuKtpi08BMoi5%252Bb5UR9moxklS8Xx%252FQU%252FyW0cPDerI2TJ4G8YmWu1%252FKEeFk7xTtJMaoFRgGdWQq68GzCfWaSTLRo%252BXc%252B8TfFu31JD5MB%252BIh87oKA30WiCANFCbQP1BJpF1DdLdDvtrtiJ1o9RHQP6jZ5neK%252FNmBnZmN%252F1b7M93jslkstVSxCaG7gW9zotTWMMNJlRDpM22%252Bys9%252FztoFKVBAHHMz2JLxKYSy6KnaUcCU1TyI013eXVk9CvnL9HE3pRNz%252BY1ZnBRpeIRLdeuzPwVsyDYvmk%252FousQ2rJAcrmIjXeJIHeq34gfX2ZXrC4JiAmRfpDINxFf7FKToXJFfqdO%252BzutCZkzS1UgzV6mWjDLw6fJqNITVZ9FcSdYN0ESISzqfF5eTYpURjX8iluBW7OXiDB%252B2KVuCJS97ZJzUUUdId%252FLTP2vbQOkm1RB6MZA4FY6z%252FJEwn7mlygY6mAFLxXnKEl%252FcbV2ooQkJsEsZpARZdcLHSisY0%252Fq0srQPnUeCxIRhrZmBUBx%252B0tQI2mTKSiXDc66%252F4iHpdDZZm2pFKnAjn3QmgE60OFqO6vWYWxRgmvRORMJPWssIBx83HPl%252BWzCb8O0BbPSIcXf9zX3Cm4BIcKY7C4iH5ukbDSp5%252FiJnf7ctfYD1jXmGkDdH1fPeMF%252BZq5rHVA%253D%253D%26Expires%3D1766417093&amp;app=opera.exe&amp;css=3&amp;js=1&amp;rel=0&amp;rji=0&amp;sbe=0"></script>
+<script type="text/javascript" nonce="fc556a4489384d409f018b3d30c" src="//local.adguard.org?ts=1766416366779&amp;name=AdGuard%20Assistant&amp;name=AdGuard%20Extra&amp;name=AdGuard%20Popup%20Blocker&amp;type=user-script"></script></head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="logo">ЭкоМаркет</a>
+            <nav id="nav-menu">
+                <a href="index.html">Главная</a>
+                <a href="register.html">Регистрация</a>
+                <a href="login.html">Вход</a>
+                <a href="add.html">Добавить товар</a>
+            </nav>
+            <button class="hamburger" id="hamburger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Search Section -->
+        <div class="search-section">
+            <h1 class="search-title">Поиск товаров</h1>
+
+            <form id="search-form" onsubmit="handleSearch(event)">
+                <div class="search-form">
+                    <div class="form-group">
+                        <label for="search-query">Наименование товара</label>
+                        <input type="text" id="search-query" name="search-query" placeholder="Введите название товара...">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="search-category">Категория</label>
+                        <select id="search-category" name="search-category">
+                            <option value="">-- Все категории --</option>
+                            <option value="food">Продукты питания</option>
+                            <option value="clothing">Одежда</option>
+                            <option value="chemicals">Бытовая химия</option>
+                            <option value="beauty">Красота и гигиена</option>
+                            <option value="home">Товары для дома</option>
+                            <option value="sports">Спорт и активность</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="search-buttons">
+                    <button type="submit" class="btn-primary">Поиск</button>
+                    <button type="reset" class="btn-secondary">Очистить</button>
+                </div>
+            </form>
+        </div>
+
+        <!-- Results Section -->
+        <div class="results-section">
+            <div class="results-info">
+                Найдено товаров: <strong id="results-count">6</strong>
+            </div>
+
+            <table class="results-table">
+                <thead>
+                    <tr>
+                        <th style="width: 120px;">Фото</th>
+                        <th>Название</th>
+                        <th>Описание</th>
+                        <th style="width: 100px;">Цена</th>
+                        <th style="width: 100px;">Действие</th>
+                    </tr>
+                </thead>
+                <tbody id="results-body">
+                    <tr>
+                        <td>
+                            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80'%3E%3Crect fill='%234a9d7d' width='80' height='80'/%3E%3C/svg%3E" alt="Товар" class="product-image">
+                        </td>
+                        <td>
+                            <div class="product-name">Эко-сумка из хлопка</div>
+                            <div class="product-description">Прочная и долговечная</div>
+                        </td>
+                        <td>Натуральная сумка из 100% хлопка, идеальна для покупок</td>
+                        <td class="product-price">890 ₽</td>
+                        <td><a href="product.html" class="btn-view">Посмотреть</a></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80'%3E%3Crect fill='%237cc99f' width='80' height='80'/%3E%3C/svg%3E" alt="Товар" class="product-image">
+                        </td>
+                        <td>
+                            <div class="product-name">Бамбуковая зубная щетка</div>
+                            <div class="product-description">Мягкие натуральные щетинки</div>
+                        </td>
+                        <td>Экологичная щетка с натуральными щетинками, биоразлагаемая</td>
+                        <td class="product-price">450 ₽</td>
+                        <td><a href="product.html" class="btn-view">Посмотреть</a></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80'%3E%3Crect fill='%232d7a5a' width='80' height='80'/%3E%3C/svg%3E" alt="Товар" class="product-image">
+                        </td>
+                        <td>
+                            <div class="product-name">Набор бамбуковой посуды</div>
+                            <div class="product-description">Экологичный набор</div>
+                        </td>
+                        <td>Полный набор посуды из натурального бамбука для всей семьи</td>
+                        <td class="product-price">2 490 ₽</td>
+                        <td><a href="product.html" class="btn-view">Посмотреть</a></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80'%3E%3Crect fill='%234a9d7d' width='80' height='80'/%3E%3C/svg%3E" alt="Товар" class="product-image">
+                        </td>
+                        <td>
+                            <div class="product-name">Органический зеленый чай</div>
+                            <div class="product-description">100% органический чай</div>
+                        </td>
+                        <td>Премиум качество, без пестицидов и химических удобрений</td>
+                        <td class="product-price">850 ₽</td>
+                        <td><a href="product.html" class="btn-view">Посмотреть</a></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80'%3E%3Crect fill='%237cc99f' width='80' height='80'/%3E%3C/svg%3E" alt="Товар" class="product-image">
+                        </td>
+                        <td>
+                            <div class="product-name">Экосвечи из соевого воска</div>
+                            <div class="product-description">Ароматические свечи</div>
+                        </td>
+                        <td>Натуральные свечи из соевого воска без синтетических отдушек</td>
+                        <td class="product-price">650 ₽</td>
+                        <td><a href="product.html" class="btn-view">Посмотреть</a></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80'%3E%3Crect fill='%232d7a5a' width='80' height='80'/%3E%3C/svg%3E" alt="Товар" class="product-image">
+                        </td>
+                        <td>
+                            <div class="product-name">Коврик для йоги из каучука</div>
+                            <div class="product-description">Натуральный коврик</div>
+                        </td>
+                        <td>Экологичный коврик из натурального каучука, прочный и практичный</td>
+                        <td class="product-price">3 200 ₽</td>
+                        <td><a href="product.html" class="btn-view">Посмотреть</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-divider">
+            <p>&copy; 2025 ЭкоМаркет. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu
+        const hamburger = document.getElementById('hamburger-menu');
+        const navMenu = document.getElementById('nav-menu');
+
+        hamburger.addEventListener('click', function() {
+            navMenu.classList.toggle('active');
+        });
+
+        navMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', function() {
+                navMenu.classList.remove('active');
+            });
+        });
+
+        function handleSearch(event) {
+            event.preventDefault();
+            const query = document.getElementById('search-query').value.toLowerCase();
+            const category = document.getElementById('search-category').value;
+
+            // Simulate filtering (in real app, would be backend)
+            alert(`Поиск: "${query}" в категории: "${category || 'Все'}"`);
+        }
+    </script>
+</body>
+</html>

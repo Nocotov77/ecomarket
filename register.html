@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация - ЭкоМаркет</title>
+    <link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/forms-styles.css">
+<script type="text/javascript" nonce="fc556a4489384d409f018b3d30c" src="//local.adguard.org?ts=1766416366779&amp;type=content-script&amp;dmn=ppl-ai-code-interpreter-files.s3.amazonaws.com&amp;url=https%3A%2F%2Fppl-ai-code-interpreter-files.s3.amazonaws.com%2Fweb%2Fdirect-files%2F21570510982a706edbcdb7a308fb4d52%2F07f902c0-3d6d-4fec-831d-2d98e3f68771%2Fb501885e.html%3Fresponse-content-disposition%3Dattachment%253B%2520filename%253Dregister.html%253B%2520filename%252A%253DUTF-8%2527%2527register.html%26AWSAccessKeyId%3DASIA2F3EMEYE4CEX6APJ%26Signature%3D9tHsmCUq8zeDGnY4RFJVYwvuDeI%253D%26x-amz-security-token%3DIQoJb3JpZ2luX2VjEC8aCXVzLWVhc3QtMSJHMEUCIBrvvf1qAR1aHBpo9IT8qeYtnlB3EYbCQicP9pjUD5CeAiEA9M1jgOgj9Be4kM3t4PBxOGq%252FgE9zmdK2ISxi6%252F1uE8Uq%252FAQI%252BP%252F%252F%252F%252F%252F%252F%252F%252F%252F%252FARABGgw2OTk3NTMzMDk3MDUiDGzD2wVL3VQjizqt6yrQBO8hM7jAsh6Q%252BqTPJ0ZxOeArWncTUuHmeNRr%252B4QK0wEJGcKgwnIncJXIz49UgRQO0uoNdsT%252FvllEj3W9wnxaoep8A7Q5r%252BacZX4x6Y9Q%252FiZiatw4Pi5cBNrDmIfpferI6j9pW6rKQi2Mmvamx6dx73VVjATSgfPkVuGXe5JMGyuDuzhgfH78z3%252FzecGtXHbqgWn81Q9kT%252F167AZZ3N%252BirrFHwgoxSftCC5q1Jsm0HsQmIxA6S%252FNelhNCBhYOmYqizqm9qlC48KEAJk6YhNt5ZeXNg%252FVOe2uVnQidIfqfyZ2D78baJ2WDtQUtBHQ7QF6Ljh6zFe5KSR56zpPfY3zHS1beKw757PhIox%252FtA3VVbJJXZQoiQvo8Gqw8c9nY4r2UvV7PhOT9aLD4F0xPRxEmXbnbZ00HngB4SrQ1d2beGKuWmPcT%252FcgQ9v3O9L2kBG59abxIF1GNvuXn7FFjg9YcXszf4nCAqMrFs6wDrnUuJUuSIvOA%252Bpp1M0nKR7Kb1SH3VlR0tp3tzWEQJsn9pJtxa4aCX8NbrqDt%252FUFo%252FxltPMAw4UXLA7fGWPAWicJddhWcVoZgW3hrL09WNT92ihE73Ai3iMyCSS4qzG46MEVkN6eeND%252Bhn%252FDGdDd4LMtoCVpiYpa53mJ78LUyYADCK8AzDhyoNTlVC33337xpzP96JjuhVOmhzYb%252BEb4VAvbv8DMDhMjGwkKqWDQv3vQFcftdl28jmRrVabGCQwJjufigJLu4bzoJ%252FgjDwcM%252B0PjDb2ppcaFTAwpFB4WIzZpus0yduv0wsrilygY6mAE2fjvl098%252BdcxBjEzkG%252FrcfnTWCSP7G07dvaCMSNi612%252BnC55SY%252F3%252Fi8%252BiVKsXyNPx%252BYjrh48sXj9PtIA6pDUrwATtNK7T5Hux11ChSNOZhjEgbNHAWAyJ%252BxZgpKdaCn4w6WIgYSvdYMI0ffSlZiQGKV6nlNqDF1B159DxBE5GkAgkwC0Nw2CVooYMjEEDpsK%252FdrKti0xQhA%253D%253D%26Expires%3D1766417067&amp;app=opera.exe&amp;css=3&amp;js=1&amp;rel=0&amp;rji=0&amp;sbe=0"></script>
+<script type="text/javascript" nonce="fc556a4489384d409f018b3d30c" src="//local.adguard.org?ts=1766416366779&amp;name=AdGuard%20Assistant&amp;name=AdGuard%20Extra&amp;name=AdGuard%20Popup%20Blocker&amp;type=user-script"></script></head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="logo">ЭкоМаркет</a>
+            <nav id="nav-menu">
+                <a href="index.html">Главная</a>
+                <a href="search.html">Поиск</a>
+                <a href="login.html">Вход</a>
+                <a href="add.html">Добавить товар</a>
+            </nav>
+            <button class="hamburger" id="hamburger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="form-card">
+            <h1>Регистрация</h1>
+            <p class="form-subtitle">Создайте учетную запись для начала покупок</p>
+
+            <div id="error-message" class="error-message"></div>
+            <div id="success-message" class="success-message"></div>
+
+            <form id="register-form" onsubmit="handleRegister(event)">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="first-name">Имя *</label>
+                        <input type="text" id="first-name" name="first-name" required>
+                        <div class="field-error" id="first-name-error"></div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="last-name">Фамилия *</label>
+                        <input type="text" id="last-name" name="last-name" required>
+                        <div class="field-error" id="last-name-error"></div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" name="email" required>
+                    <div class="field-error" id="email-error"></div>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Телефон *</label>
+                    <input type="tel" id="phone" name="phone" placeholder="+7 (___) ___-__-__" required>
+                    <div class="field-error" id="phone-error"></div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="password">Пароль *</label>
+                        <input type="password" id="password" name="password" required>
+                        <div class="field-error" id="password-error"></div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password-confirm">Повтор пароля *</label>
+                        <input type="password" id="password-confirm" name="password-confirm" required>
+                        <div class="field-error" id="password-confirm-error"></div>
+                    </div>
+                </div>
+
+                <div class="form-group checkbox">
+                    <input type="checkbox" id="terms" name="terms" required>
+                    <label for="terms">Я согласен с обработкой персональных данных и условиями использования</label>
+                    <div class="field-error" id="terms-error"></div>
+                </div>
+
+                <button type="submit" class="btn-primary">Зарегистрироваться</button>
+            </form>
+
+            <div class="link-text">
+                Уже есть аккаунт? <a href="login.html">Войти</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-divider">
+            <p>&copy; 2025 ЭкоМаркет. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script>
+        const hamburger = document.getElementById('hamburger-menu');
+        const navMenu = document.getElementById('nav-menu');
+
+        hamburger.addEventListener('click', function() {
+            navMenu.classList.toggle('active');
+        });
+
+        navMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', function() {
+                navMenu.classList.remove('active');
+            });
+        });
+
+        function handleRegister(event) {
+            event.preventDefault();
+
+            const firstName = document.getElementById('first-name').value.trim();
+            const lastName = document.getElementById('last-name').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const phone = document.getElementById('phone').value.trim();
+            const password = document.getElementById('password').value;
+            const passwordConfirm = document.getElementById('password-confirm').value;
+            const terms = document.getElementById('terms').checked;
+
+            const errorMessage = document.getElementById('error-message');
+            const successMessage = document.getElementById('success-message');
+
+            // Reset all errors
+            document.querySelectorAll('.field-error').forEach(el => el.classList.remove('show'));
+            errorMessage.classList.remove('show');
+            successMessage.classList.remove('show');
+
+            let hasError = false;
+
+            // Validation
+            if (!firstName) {
+                showFieldError('first-name-error', 'Имя обязательно для заполнения');
+                hasError = true;
+            } else if (firstName.length < 2) {
+                showFieldError('first-name-error', 'Имя должно быть не менее 2 символов');
+                hasError = true;
+            }
+
+            if (!lastName) {
+                showFieldError('last-name-error', 'Фамилия обязательна для заполнения');
+                hasError = true;
+            } else if (lastName.length < 2) {
+                showFieldError('last-name-error', 'Фамилия должна быть не менее 2 символов');
+                hasError = true;
+            }
+
+            if (!email) {
+                showFieldError('email-error', 'Email обязателен для заполнения');
+                hasError = true;
+            } else if (!isValidEmail(email)) {
+                showFieldError('email-error', 'Введите корректный email');
+                hasError = true;
+            }
+
+            if (!phone) {
+                showFieldError('phone-error', 'Телефон обязателен для заполнения');
+                hasError = true;
+            } else if (!isValidPhone(phone)) {
+                showFieldError('phone-error', 'Введите корректный номер телефона');
+                hasError = true;
+            }
+
+            if (!password) {
+                showFieldError('password-error', 'Пароль обязателен для заполнения');
+                hasError = true;
+            } else if (password.length < 6) {
+                showFieldError('password-error', 'Пароль должен быть не менее 6 символов');
+                hasError = true;
+            }
+
+            if (!passwordConfirm) {
+                showFieldError('password-confirm-error', 'Подтверждение пароля обязательно');
+                hasError = true;
+            } else if (password !== passwordConfirm) {
+                showFieldError('password-confirm-error', 'Пароли не совпадают');
+                hasError = true;
+            }
+
+            if (!terms) {
+                showFieldError('terms-error', 'Необходимо согласиться с условиями');
+                hasError = true;
+            }
+
+            if (hasError) {
+                errorMessage.textContent = 'Пожалуйста, исправьте ошибки в форме';
+                errorMessage.classList.add('show');
+                return;
+            }
+
+            // Success
+            successMessage.textContent = 'Регистрация успешна! Перенаправление на страницу входа...';
+            successMessage.classList.add('show');
+            setTimeout(() => {
+                window.location.href = 'login.html';
+            }, 2000);
+        }
+
+        function showFieldError(elementId, message) {
+            const element = document.getElementById(elementId);
+            element.textContent = message;
+            element.classList.add('show');
+        }
+
+        function isValidEmail(email) {
+            const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return regex.test(email);
+        }
+
+        function isValidPhone(phone) {
+            const regex = /^[\d\s\-\+\(\)]{10,}$/;
+            return regex.test(phone);
+        }
+    </script>
+</body>
+</html>

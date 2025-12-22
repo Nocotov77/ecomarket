@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Личный кабинет - ЭкоМаркет</title>
+    <link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/profile-styles.css">
+<script type="text/javascript" nonce="fc556a4489384d409f018b3d30c" src="//local.adguard.org?ts=1766416366779&amp;type=content-script&amp;dmn=ppl-ai-code-interpreter-files.s3.amazonaws.com&amp;url=https%3A%2F%2Fppl-ai-code-interpreter-files.s3.amazonaws.com%2Fweb%2Fdirect-files%2F21570510982a706edbcdb7a308fb4d52%2Fc3a76619-2bfc-4017-92f9-189b54c2f7d9%2Ff32cee85.html%3Fresponse-content-disposition%3Dattachment%253B%2520filename%253Dprofile.html%253B%2520filename%252A%253DUTF-8%2527%2527profile.html%26AWSAccessKeyId%3DASIA2F3EMEYEXQTYUBT2%26Signature%3DVPxaoorEZ6fQZ6tPdxiubmRjtoc%253D%26x-amz-security-token%3DIQoJb3JpZ2luX2VjEC8aCXVzLWVhc3QtMSJHMEUCIEfDLOGvA5DPx%252BZRF%252FAKEwlpEVW6m%252BnvybtUoJ4vT69DAiEA9mjyFcFU9TVpGNjaQqyxvEYdSvtDppRjpsjcU2roQHQq%252FAQI%252BP%252F%252F%252F%252F%252F%252F%252F%252F%252F%252FARABGgw2OTk3NTMzMDk3MDUiDB1UwPucrmjE6Nv4TSrQBMU%252Bxc5ZPCUVIR1EOFydvFPpq7Mj4fUJ1o%252BEKcU5e6%252Bj%252B%252Fgc%252BxYylkkS%252BdNtsI8EAkIvOKD8pgqfTtlVzxGZ6agfZy5QTjwd7ISnDAd1CSBjg5%252BASPJfFwlc85ia7lY4TFWr8YfvK8DssRFt1xkXA2smCyUwldVm810z37oMJuHSFo4wSd%252BIpSlSpEzNUaI3nj1iFUpXbg2Y%252BjcqcirzMFqylCU1AolNysnI7oldDSOskD12HU9YAAQdWq0HfEzB0bW1ORohYO2cIT7chGUZvux9ztIy4FKpzv%252BDzCP0bNn6akxfOprNoOn6FY2T8dbFoC07wSxf95xd3jNRML4jLT23Za7b2B3d0FC59dLzrx45X3CDpqSy2LAiZQf6fMkPgEgO5ZR0rCbDKWp2iYRZBrsX9XB7h99NxgBp95xYkkFZIFdu4XayhtIhrbmyCrkzATcOoJb01KSmtujaJ5dzQ67rhk1aGsk25cbotueVG98G7cr3AXXSZwTOZkukuumw%252Bn7JvAGzdQSadh4zcKMVVoFKLNQAIfut8kRyZTG1ZVPGC40XF9G1wrygHGdc6c6yQGJD3TaAt8EPhoCQm9QLlcNkXs0gyXhcNJMzPCrJZA3lMao%252Ff2%252B0NS4TfwjWCxyfJ2Our%252Fooc1NH6xVTNCSE3meRbp1N4zDUo%252BC%252BedQfPjim6%252BlTfpFdwJvVMlbh43IzUbb4rMQIsIholU3u5YgAnlEJ73lLagxFQBeF%252FQW4eNf%252B4Aw02PIlgREJtzEyv9343pwC2KBcXeUq0fuqw5D6mQ4wz7qlygY6mAEXnmCy2v0EPcGl8d42k7694tfQqkXeVW9NfT9TEWluZfqJ7kwZPBcFiT5J3SnGeQg33dY84PQUJYTmlri547d1GdcbnN6n983%252FeC%252F%252FQa0IQHQc5M%252Bu6B52FipQ70W5t5ZJOdXExqOp4XgplSmfPXDYYSfHz6WsROUyS3A8M6CBRMk2OqzSTEHOvBxYgdcAtPHiZOaHVxCmBg%253D%253D%26Expires%3D1766417077&amp;app=opera.exe&amp;css=3&amp;js=1&amp;rel=0&amp;rji=0&amp;sbe=0"></script>
+<script type="text/javascript" nonce="fc556a4489384d409f018b3d30c" src="//local.adguard.org?ts=1766416366779&amp;name=AdGuard%20Assistant&amp;name=AdGuard%20Extra&amp;name=AdGuard%20Popup%20Blocker&amp;type=user-script"></script></head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="logo">ЭкоМаркет</a>
+            <nav id="nav-menu">
+                <a href="index.html">Главная</a>
+                <a href="search.html">Поиск</a>
+                <a href="add.html">Добавить товар</a>
+                <button class="logout-btn" onclick="handleLogout()">Выход</button>
+            </nav>
+            <button class="hamburger" id="hamburger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Profile Header -->
+        <div class="profile-header">
+            <h1 class="profile-title">Мой профиль</h1>
+
+            <div class="profile-info-grid">
+                <!-- Email -->
+                <div class="info-item">
+                    <div class="info-label">Email</div>
+                    <div class="info-value" id="email-display">user@example.com</div>
+                    <div class="info-buttons">
+                        <button class="btn-small" onclick="openEmailModal()">Изменить</button>
+                    </div>
+                </div>
+
+                <!-- Phone -->
+                <div class="info-item">
+                    <div class="info-label">Телефон</div>
+                    <div class="info-value" id="phone-display">+7 (999) 123-45-67</div>
+                    <div class="info-buttons">
+                        <button class="btn-small" onclick="openPhoneModal()">Изменить</button>
+                    </div>
+                </div>
+
+                <!-- Stats -->
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-number" id="products-count">8</div>
+                        <div class="stat-label">Товаров добавлено</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number" id="reg-date">2025</div>
+                        <div class="stat-label">Дата регистрации</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Products Section -->
+        <div class="products-section">
+            <h2 class="section-title">Мои товары</h2>
+
+            <!-- Active Products -->
+            <div class="status-group">
+                <h3 class="status-title active">✓ Активно</h3>
+                <table class="products-table">
+                    <thead>
+                        <tr>
+                            <th>Название</th>
+                            <th>Описание</th>
+                            <th>Цена</th>
+                            <th>Действия</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="product-name">Эко-сумка из хлопка</td>
+                            <td>Прочная и долговечная сумка</td>
+                            <td class="product-price">890 ₽</td>
+                            <td>
+                                <button class="btn-action">Редакт.</button>
+                                <button class="btn-action delete">Удалить</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="product-name">Бамбуковая зубная щетка</td>
+                            <td>Мягкие натуральные щетинки</td>
+                            <td class="product-price">450 ₽</td>
+                            <td>
+                                <button class="btn-action">Редакт.</button>
+                                <button class="btn-action delete">Удалить</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Moderation Products -->
+            <div class="status-group">
+                <h3 class="status-title moderation">⏳ На модерации</h3>
+                <table class="products-table">
+                    <thead>
+                        <tr>
+                            <th>Название</th>
+                            <th>Описание</th>
+                            <th>Цена</th>
+                            <th>Действия</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="product-name">Набор бамбуковой посуды</td>
+                            <td>Экологичный набор для всей семьи</td>
+                            <td class="product-price">2 490 ₽</td>
+                            <td>
+                                <button class="btn-action">Редакт.</button>
+                                <button class="btn-action delete">Удалить</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="product-name">Портативная солнечная батарея</td>
+                            <td>Компактная батарея для гаджетов</td>
+                            <td class="product-price">5 990 ₽</td>
+                            <td>
+                                <button class="btn-action">Редакт.</button>
+                                <button class="btn-action delete">Удалить</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Sold Products -->
+            <div class="status-group">
+                <h3 class="status-title sold">✓ Продано</h3>
+                <table class="products-table">
+                    <thead>
+                        <tr>
+                            <th>Название</th>
+                            <th>Описание</th>
+                            <th>Цена</th>
+                            <th>Действия</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="product-name">Органический зеленый чай</td>
+                            <td>100% органический чай</td>
+                            <td class="product-price">850 ₽</td>
+                            <td>
+                                <button class="btn-action">Подробнее</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="product-name">Экосвечи из соевого воска</td>
+                            <td>Ароматические свечи натуральные</td>
+                            <td class="product-price">650 ₽</td>
+                            <td>
+                                <button class="btn-action">Подробнее</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Archive Products -->
+            <div class="status-group">
+                <h3 class="status-title archive">📦 В архиве</h3>
+                <table class="products-table">
+                    <thead>
+                        <tr>
+                            <th>Название</th>
+                            <th>Описание</th>
+                            <th>Цена</th>
+                            <th>Действия</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="product-name">Коврик для йоги из каучука</td>
+                            <td>Натуральный коврик для йоги</td>
+                            <td class="product-price">3 200 ₽</td>
+                            <td>
+                                <button class="btn-action">Восстановить</button>
+                                <button class="btn-action delete">Удалить</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="product-name">Льняная скатерть</td>
+                            <td>Скатерть из 100% натурального льна</td>
+                            <td class="product-price">1 500 ₽</td>
+                            <td>
+                                <button class="btn-action">Восстановить</button>
+                                <button class="btn-action delete">Удалить</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- Email Modal -->
+    <div id="email-modal" class="modal">
+        <div class="modal-content">
+            <h2 class="modal-title">Изменить email</h2>
+            <form onsubmit="saveEmail(event)">
+                <div class="form-group">
+                    <label for="new-email">Новый email</label>
+                    <input type="email" id="new-email" required>
+                </div>
+                <div class="modal-buttons">
+                    <button type="submit" class="btn-primary">Сохранить</button>
+                    <button type="button" class="btn-secondary" onclick="closeEmailModal()">Отмена</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Phone Modal -->
+    <div id="phone-modal" class="modal">
+        <div class="modal-content">
+            <h2 class="modal-title">Изменить телефон</h2>
+            <form onsubmit="savePhone(event)">
+                <div class="form-group">
+                    <label for="new-phone">Новый номер телефона</label>
+                    <input type="tel" id="new-phone" placeholder="+7 (___) ___-__-__" required>
+                </div>
+                <div class="modal-buttons">
+                    <button type="submit" class="btn-primary">Сохранить</button>
+                    <button type="button" class="btn-secondary" onclick="closePhoneModal()">Отмена</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-divider">
+            <p>&copy; 2025 ЭкоМаркет. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu
+        const hamburger = document.getElementById('hamburger-menu');
+        const navMenu = document.getElementById('nav-menu');
+
+        hamburger.addEventListener('click', function() {
+            navMenu.classList.toggle('active');
+        });
+
+        navMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', function() {
+                navMenu.classList.remove('active');
+            });
+        });
+
+        // Modal functions
+        function openEmailModal() {
+            document.getElementById('email-modal').classList.add('show');
+        }
+
+        function closeEmailModal() {
+            document.getElementById('email-modal').classList.remove('show');
+        }
+
+        function openPhoneModal() {
+            document.getElementById('phone-modal').classList.add('show');
+        }
+
+        function closePhoneModal() {
+            document.getElementById('phone-modal').classList.remove('show');
+        }
+
+        function saveEmail(event) {
+            event.preventDefault();
+            const newEmail = document.getElementById('new-email').value;
+            document.getElementById('email-display').textContent = newEmail;
+            alert('Email успешно изменен!');
+            closeEmailModal();
+        }
+
+        function savePhone(event) {
+            event.preventDefault();
+            const newPhone = document.getElementById('new-phone').value;
+            document.getElementById('phone-display').textContent = newPhone;
+            alert('Телефон успешно изменен!');
+            closePhoneModal();
+        }
+
+        function handleLogout() {
+            if (confirm('Вы уверены, что хотите выйти?')) {
+                window.location.href = 'index.html';
+            }
+        }
+
+        // Close modals on outside click
+        window.addEventListener('click', function(event) {
+            const emailModal = document.getElementById('email-modal');
+            const phoneModal = document.getElementById('phone-modal');
+
+            if (event.target === emailModal) {
+                closeEmailModal();
+            }
+            if (event.target === phoneModal) {
+                closePhoneModal();
+            }
+        });
+    </script>
+</body>
+</html>
